@@ -22,7 +22,8 @@ public partial class NewScript : Node
 
     private void _on_start_pressed()
     {
-        var newScene = GD.Load<PackedScene>("res://Teste1.tscn");
+        var newScene = GD.Load<PackedScene>("res://world.tscn");
+
         GetTree().ChangeSceneToPacked(newScene);
     }
     private void _on_quit_pressed()
